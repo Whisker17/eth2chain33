@@ -1,5 +1,5 @@
 syntax = "proto3";
-package proto;
+package types;
 
 enum EthBridgeStatus {
     PendingStatusText       = 0;
@@ -7,7 +7,7 @@ enum EthBridgeStatus {
     FailedStatusText    = 2;
 }
 
-message RelayAction {
+message Eth2Chain33Action {
     oneof value {
         EthBridgeClaim    ethBridgeClaim     = 1;
         MsgBurn    msgBurn     = 2;
